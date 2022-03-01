@@ -10,9 +10,6 @@
 
 //***** USER CONFIG - FILL THIS OUT! *****//
 
-// Observe the Cookie value from the browser network tab
-const COOKIE = ''
-
 // Find the CSRF Token by 'Inspecting Element' and searching for 'CSRF'
 const CSRF_TOKEN = '';
 
@@ -69,7 +66,6 @@ $(async function() {
           "Origin": " https://www.linkedin.com",
           "Connection": " keep-alive",
           "Referer": " https://www.linkedin.com/in/billgates/",
-          "Cookie": COOKIE,
           "Sec-Fetch-Dest": " empty",
           "Sec-Fetch-Mode": " cors",
           "Sec-Fetch-Site": " same-origin",
