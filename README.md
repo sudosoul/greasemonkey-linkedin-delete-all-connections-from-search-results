@@ -12,3 +12,4 @@ DONT ENABLE THE SCRIPT YET!
 6. Sure you ready? This will delete all 10 users shown per page. 
 7. If so, enable the script, and then refresh. Bam! You just removed those 10 users as connections. Refresh again, and you will remove the next 10 users as connections. Keep refreshing until you've removed all relevant users as connections. 
 8. Enjoy your new peace of mind. 
+9. MAKE SURE YOU DISABLE THE SCRIPT NOW THOUGH TOO!!!!
