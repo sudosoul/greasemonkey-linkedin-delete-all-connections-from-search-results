@@ -13,15 +13,26 @@
 // Find the CSRF Token by 'Inspecting Element' and searching for 'CSRF'
 const CSRF_TOKEN = '';
 
+// If you only want to remove users who are currently at 'COMPANY', enter its value below. 
+// Alternatively, you could also remove all users who are 'Recruiters' if you wanted to as well,
+// Or even all users who work in {{insert your least favorite city here}}
+// (This searches the grey text a user has that says "Senior Philospher @ Chill Thinkers Inc"
+const COMPANY_OR_ROLE_OR_LOCATION = 'Evil Company'; // Not case sensitive
+
 //***** END USER CONFIG!!! *****//
 
 $(async function() {
   
   let userProfileUrls = [];
-  $('.app-aware-link').each(function(i, el) { 
-    userProfileUrls.push($(el).attr('href')) 
+  $(".app-aware-link[aria-hidden='true']").each(function(i, el) {
+    const usersLogo = $(el).parent().parent().next().children().children().next().children().children().text();
+    if ( usersLogo.toLowerCase().includes(COMPANY_OR_ROLE_OR_LOCATION.toLowerCase()) ) {
+      //console.log(`Match found! - ${usersLogo}`);
+      userProfileUrls.push($(el).attr('href'));
+    }
   });
   userProfileUrls = [...new Set(userProfileUrls)];
+  console.log(`Found ${userProfileUrls.length} matches to delete.`);
   
   
   let userUrns = [];
