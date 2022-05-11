@@ -1,5 +1,5 @@
 # greasemonkey-linkedin-delete-all-connections-from-search-results
-This Greasemonkey script, when enabled, will delete all the current connections shown on a search results page. Useful if you want to remove all connections from SomeEvilCompany. Just go to connections, and filter by the company, activate the greasemonkey script, and then keep refreshing. Every time you refresh the page, it removes all those users as your connection. Some manual set up required. 
+This Greasemonkey script, when enabled, will delete all the current connections shown on a search results page. Useful so that your LinkedIn Feed contains results from people you want to professionally be associated with. Just go to connections, and filter by the company, activate the greasemonkey script, and then keep refreshing. Every time you refresh the page, it removes all those users as your connection. Some manual set up required. 
 
 # Steps
 DONT ENABLE THE SCRIPT YET!
